@@ -1,0 +1,134 @@
+/*================= /
+|     Navbar        |
+| =================*/
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    width: 90px;
+    height: 35px;
+    display: none;
+}
+
+.navbar__hamburguer {
+    color: hsl(var(--clr__primary--200));
+    background: transparent;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+    transition: transform 0.4s ease-in; 
+}
+.navbar__hamburguer[data-visible="true"] {
+    transform: rotate(-90deg);
+}
+
+.navbar__content {
+    position: fixed;
+    inset: 0 0 0 1%;
+    transform: translateY(-100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.navbar__logo[data-visible="true"] {
+    display: block;
+}
+
+.header__bg[data-visible="true"] img {
+    opacity: 1;
+}
+
+.navbar__content[data-visible="true"] {
+    display: block;
+    transform: translateY(0);
+}
+
+.navbar__list {
+    height: 80vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 20px;
+}
+
+.navbar__link {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: hsl(var(--clr__neutral--100));
+    text-transform: capitalize;
+}
+
+.navbar__media {
+    display: flex;
+    margin-inline: auto;
+    width: 50%;
+}
+
+.navbar__media>* {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.navbar__icon {
+    font-size: 1.25rem;
+    color: hsl(var(--clr__neutral--100))
+}
+.navbar__link:hover,
+.navbar__icon:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar__hamburguer {
+        display: none;
+    }
+
+    .navbar__content {
+        position: initial;
+        transform: translateY(0px);
+    }
+
+    .navbar__list {
+        display: flex;
+        height: auto;
+    }
+
+    .navbar__link {
+        font-family: "Work Sans", sans-serif;
+        font-size: .96rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: hsl(var(--clr__primary--200));
+    }
+
+    .navbar__link:hover {
+        color: hsl(var(--clr__primary--200) / 0.7);
+
+    }
+
+    .navbar__logo--light,
+    .header__bg,
+    .navbar__media {
+        display: none !important;
+    }
+
+    .navbar__logo--dark {
+        display: block;
+    }
+}

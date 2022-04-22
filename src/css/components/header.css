@@ -1,0 +1,21 @@
+/*================= /
+|     Header        |
+| =================*/
+.header {
+    position: relative;
+    padding: 33px 0px;
+    background: hsl(var(--clr__neutral--100));
+}
+
+.header__bg img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+
+    z-index: 1;
+}

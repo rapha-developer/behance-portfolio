@@ -1,0 +1,13 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: hsl(var(--bg__primary--100));
+    line-height: 1.65;
+    letter-spacing: .004em;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.5;
+}

@@ -1,0 +1,28 @@
+/*================= /
+|   Intro (info)    |
+| =================*/
+.intro {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.intro__informations {
+    padding-block: 5rem;
+}
+
+.intro__title {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: hsl(var(--clr__primary--300));
+    margin-bottom: 1rem;
+}
+
+.intro__description {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(var(--clr__primary--200));
+    max-width: 70%;
+}
+
