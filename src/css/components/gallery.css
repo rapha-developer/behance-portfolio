@@ -1,0 +1,17 @@
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 0px;
+}
+
+.gallery__item {
+    height: 99%;
+    margin-bottom: -8px;
+}
+
+.gallery__item img {
+    width: 100%;
+    aspect-ratio: 2 / 1.25;
+    object-fit: cover;
+}
