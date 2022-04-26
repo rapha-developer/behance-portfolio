@@ -1,15 +1,6 @@
 import { useState } from "react";
 
 function Navbar(props) {
-    // const [logoVisible, setLogoVisible] = useState(props.bgVisible);
-    // const [dataVisible, setDataVisible] = useState(props.bgVisible);
-    // console.log(props.bgVisible)
-    // function toggleBar() {
-    //     setLogoVisible(prevLogo => !prevLogo);
-    //     setDataVisible(prevData => !prevData);
-    //     const propsVisible = props.bgVisible;
-    //     props.bgVisible = !propsVisible;
-    // }
     
     return (
         <nav class="navbar">
