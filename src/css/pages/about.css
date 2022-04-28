@@ -2,7 +2,7 @@
     background: #fff;
 }
 .about__row {
-    padding: 110px 0px 150px;
+    padding: 110px 0px 90px;
     display: grid;
     grid-gap: 50px;
     justify-items: center;

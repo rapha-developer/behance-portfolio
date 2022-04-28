@@ -1,6 +1,21 @@
 import { useState } from "react";
 
+import navbarData from '../api/navbar';
+
 function Navbar(props) {
+
+    const mediaItems = navbarData.navbarIcons.map((navbarIcon) => {
+        return (
+            <a href={navbarIcon.url} class="navbar__icon"><i class={navbarIcon.class}></i></a>
+        );
+    });
+    const navbarItems = navbarData.navbarItems.map((navbarItem) => {
+        return (
+            <li class="navbar__item">
+                <a href={navbarItem.url} class="navbar__link">{navbarItem.name}</a>
+            </li>
+        );
+    });
     
     return (
         <nav class="navbar">
@@ -22,24 +37,11 @@ function Navbar(props) {
             </div>
             <div class="navbar__content" id="navbar-content" data-visible={props.dataVisible}>
                 <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">work</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">about</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">contact</a>
-                    </li>
+                    {navbarItems}
                 </ul>
 
                 <div class="navbar__media">
-                    <a href="#" class="navbar__icon"><i class="fa-brands fa-behance"></i></a>
-                    <a href="#" class="navbar__icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="navbar__icon"><i class="fa-brands fa-codepen"></i></a>
+                    {mediaItems}
                 </div>
             </div>
         </nav>
