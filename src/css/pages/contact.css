@@ -1,0 +1,23 @@
+.about {
+    background: #fff;
+}
+.about__row {
+    padding: 110px 0px 150px;
+    display: grid;
+    grid-gap: 50px;
+    justify-items: center;
+}
+
+@media screen and (min-width: 968px) {
+    .about__row {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .about__column--info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

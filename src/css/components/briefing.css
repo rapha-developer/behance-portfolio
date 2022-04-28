@@ -1,0 +1,28 @@
+.briefing__welcome {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #facd49;
+  letter-spacing: 0.5em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  
+  margin-bottom: 10px;
+}
+.briefing__name {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.briefing__bio {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #647072;
+  margin-bottom: 30px;
+
+}
