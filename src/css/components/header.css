@@ -7,6 +7,7 @@
     background: hsl(var(--clr__neutral--100));
 }
 
+
 .header__bg img {
     position: fixed;
     top: 0;
@@ -15,6 +16,7 @@
     height: 100%;
     width: 100%;
     opacity: 0;
+    visibility: hidden;
     transition: opacity 300ms ease-in;
 
     z-index: 1;

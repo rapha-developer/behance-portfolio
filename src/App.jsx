@@ -7,8 +7,8 @@ import About from './pages/About'
 function App() {
 
   return (
-    // <Home />
-    <About />
+    <Home />
+    // <About />
   )
 }
 
