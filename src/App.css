@@ -64,8 +64,6 @@
 }
 .App {
   min-height: 100vh;
-  display: grid;
-  grid-gap: 45px;
 }
 .row {
   display: grid;
