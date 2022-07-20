@@ -1,14 +1,17 @@
 
 function Poster(props) {
+    
     return (
-        <div className="poster__head">
-            <div className="poster__introduction">
-                <span className="poster__component--left"></span>
-                <h1 className="poster__title">{props.title}</h1>
-                <span className="poster__component--right"></span>
+        <section className="poster">
+            <div className="container" >
+                <span className="poster__trace poster__trace--left"></span>
+                <span className="poster__trace poster__trace--right"></span>
+                <div className="poster__content">
+                    <h1 className="poster__title uppercase">{props.title}</h1>
+                    <p className="poster__subtitle capitalize">{props.subtitle}</p>
+                </div>
             </div>
-            <p className="poster__history"><a href="#">Home</a> ~ {props.title}</p>
-        </div>
+        </section>
     )
 }
 export default Poster
