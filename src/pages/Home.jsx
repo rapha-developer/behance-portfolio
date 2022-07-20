@@ -53,6 +53,7 @@ function Home() {
             author: "David Butter",
             text: "Founded in 2014, by designers Leonard, OrionStudio is a global brand and design agency with offices in the creative hubs of London and San Francisco. Using effective strategies and innovative creative thinking",
             image: "https://themes.g5plus.net/orion/creative-agency/wp-content/uploads/2016/09/post-04-646x510.jpg",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
         },
         {
             date: "nOvEMbeR 4, 2016",
@@ -60,8 +61,63 @@ function Home() {
             author: "David Butter",
             text: "Founded in 2014, by designers Leonard, OrionStudio is a global brand and design agency with offices in the creative hubs of London and San Francisco. Using effective strategies and innovative creative thinking",
             image: "https://themes.g5plus.net/orion/creative-agency/wp-content/uploads/2016/10/gallery2-646x510.jpg",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/per-prima-denique/"
         },
     ]
+    const gallery = [
+        {
+            title: "Minimum agostinho",
+            image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_07.jpg",
+            tags: "Capital",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
+        },
+        {
+            title: "Per prima heart",
+            image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_02.jpg",
+            tags: "Capital",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/per-prima-denique/"
+        },
+        {
+            title: "Habeas corpus",
+            image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_05.jpg",
+            tags: "Capital",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/habeo-quodsi/"
+        },
+    ];
+    const posts = [
+        {
+            date: "nOvEMbeR 9, 2016",
+            title: "Top 3 best Commerce Websites in 2016",
+            author: "David Butter",
+            text: "Founded in 2014, by designers Leonard, OrionStudio is a global brand and design agency with offices in the creative hubs of London and San Francisco.",
+            image: "https://themes.g5plus.net/orion/creative-agency/wp-content/uploads/2016/09/post-04-646x510.jpg",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
+        },
+        {
+            date: "nOvEMbeR 9, 2016",
+            title: "The 10 best Web design in November",
+            author: "David Butter",
+            text: "Founded in 2014, by designers Leonard, OrionStudio is a global brand and design agency with offices in the creative hubs of London and San Francisco.",
+            image: "https://themes.g5plus.net/orion/creative-agency/wp-content/uploads/2016/11/blog-02-646x510.jpg",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/per-prima-denique/"
+        },
+        {
+            date: "nOvEMbeR 8, 2016",
+            title: "The 10 best Web design in November",
+            author: "David Butter",
+            text: "Founded in 2014, by designers Leonard, OrionStudio is a global brand and design agency with offices in the creative hubs of London and San Francisco.",
+            image: "https://themes.g5plus.net/orion/creative-agency/wp-content/uploads/2016/11/blog-03-646x510.jpg",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/habeo-quodsi/"
+        },
+        {
+            date: "nOvEMbeR 7, 2016",
+            title: "The 10 best new graphic design tools",
+            author: "David Butter",
+            text: "Founded in 2014, by designers Leonard, OrionStudio is a global brand and design agency with offices in the creative hubs of London and San Francisco.",
+            image: "https://themes.g5plus.net/orion/creative-agency/wp-content/uploads/2016/11/blog-04-646x510.jpg",
+            url: "http://themes.g5plus.net/orion/creative-business/portfolio/"
+        },
+    ];
     return (
         <div className="home">
             <Navbar />
@@ -75,8 +131,8 @@ function Home() {
                 <ContactInfo contact={contact} />
                 <LocationMap />
                 <Blogs blogs={blogs} />
-                <Gallery />
-                <Posts />
+                <Gallery gallery={gallery} />
+                <Posts posts={posts} />
             </div>
         </div>
     )
