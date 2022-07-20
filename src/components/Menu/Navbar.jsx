@@ -33,9 +33,9 @@ function Navbar(props) {
             label: "contact"
         },
     ];
-    const nav__items = navbarItems.map((navItem) => {
+    const nav__items = navbarItems.map((navItem, key) => {
         return ( 
-            <NavbarItem 
+            <NavbarItem key={key}
                 path={navItem.path}
                 label={navItem.label}
             />
