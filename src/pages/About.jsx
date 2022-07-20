@@ -7,24 +7,28 @@ function About() {
         subtitle: "home ~ about"
     }
     const subject = {
-        intro: "heLLo woRld!",
-        title: "we are agency",
-        text: "I’m a web designer / developer based on en-va-to. I have a passion for web design and love to create for web and mobile devices.",
+        intro: "heLLo eveRboDY!",
+        title: "Sou frontend developer",
+        text: "Sou um web designer / developer que programa em HTML, CSS, JAVASCRIPT & REACT. Eu tenho a preocupação de construir Websites e Apps esteticamente agradáveis e fáceis de realizar manutenção.",
     }
     const progress = [
         {
-            label: 'photoShop',
+            label: 'html',
             percent: '90'
         },
         {
-            label: 'development',
-            percent: '95'
+            label: 'css',
+            percent: '60'
         },
         {
-            label: 'design',
-            percent: '85'
+            label: 'javascript',
+            percent: '55'
         },
-    ]
+        {
+            label: 'react',
+            percent: '15'
+        },
+    ];
     return (
         <div className="about">
             <Poster 
