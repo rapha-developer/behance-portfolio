@@ -359,6 +359,10 @@
   color: hsl(var(--clr__primary--100));
   margin-bottom: var(--spc__scale-3);
 }
+.posts__title:hover {
+  color: hsl(var(--clr__accent--100));
+  transition: all 0.3s ease-in;
+}
 .posts__author {
   display: inline-block;
   font-family: var(--ff__montserrat, sans-serif);
@@ -479,6 +483,10 @@
   color: hsl(var(--clr__primary--100));
   line-height: 1.2;
   margin-bottom: var(--spc__scale-3);
+}
+.blogs__title:hover {
+  color: hsl(var(--clr__accent--100));
+  transition: all 0.3s ease-in;
 }
 .blogs__author {
   display: inline-block;
