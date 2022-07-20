@@ -1,6 +1,5 @@
 import ContactInfo from "../components/ContactInfo"
 import LocationMap from "../components/LocationMap"
-import Navbar from "../components/Menu/Navbar"
 import Poster from "../components/Poster"
 
 function Contact() {
@@ -20,7 +19,6 @@ function Contact() {
     }
     return (
         <div className="contact">
-            <Navbar />
             <Poster  
                 title={posterData.title}
                 subtitle={posterData.subtitle}

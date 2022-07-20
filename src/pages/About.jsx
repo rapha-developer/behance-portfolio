@@ -1,4 +1,3 @@
-import Navbar from "../components/Menu/Navbar"
 import Poster from "../components/Poster"
 import AboutDetails from "../molecules/AboutDetails"
 
@@ -28,7 +27,6 @@ function About() {
     ]
     return (
         <div className="about">
-            <Navbar />
             <Poster 
                 title={posterData.title}
                 subtitle={posterData.subtitle}

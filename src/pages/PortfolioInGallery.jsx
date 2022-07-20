@@ -1,5 +1,4 @@
 import Gallery from "../components/Grid/Gallery"
-import Navbar from "../components/Menu/Navbar"
 import Poster from "../components/Poster"
 
 function PortfolioInGallery() {
@@ -29,7 +28,6 @@ function PortfolioInGallery() {
     ];
     return (
         <div className="portfolioInGallery">
-            <Navbar />
             <Poster
                 title={posterData.title}
                 subtitle={posterData.subtitle}

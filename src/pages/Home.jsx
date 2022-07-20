@@ -4,7 +4,6 @@ import Blogs from "../components/Grid/Blogs"
 import Gallery from "../components/Grid/Gallery"
 import Posts from "../components/Grid/Posts"
 import LocationMap from "../components/LocationMap"
-import Navbar from "../components/Menu/Navbar"
 import Poster from "../components/Poster"
 import ProgressBar from "../components/ProgressBar"
 import Subject from "../components/Subject"
@@ -120,7 +119,6 @@ function Home() {
     ];
     return (
         <div className="home">
-            <Navbar />
             <Poster title={posterData.title}
                     subtitle={posterData.subtitle}
             />

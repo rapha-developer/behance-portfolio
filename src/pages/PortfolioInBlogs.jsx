@@ -1,6 +1,5 @@
 import Banner from "../components/Banner"
 import Blogs from "../components/Grid/Blogs"
-import Navbar from "../components/Menu/Navbar"
 import Poster from "../components/Poster"
 
 function PortfolioInBlogs() {
@@ -28,7 +27,6 @@ function PortfolioInBlogs() {
     ];
     return (
         <div className="portfolioInBlogs">
-            <Navbar />
             <Banner banner={banner} />
             <div className="container">
                 <Blogs blogs={blogs} />

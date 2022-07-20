@@ -1,5 +1,4 @@
 import Posts from "../components/Grid/Posts"
-import Navbar from "../components/Menu/Navbar"
 import Poster from "../components/Poster"
 
 function PortfolioInPosts() {
@@ -44,7 +43,6 @@ function PortfolioInPosts() {
 
     return (
         <div className="portfolioInPosts">
-            <Navbar />
             <Poster 
                 title={posterData.title}
                 subtitle={posterData.subtitle}
