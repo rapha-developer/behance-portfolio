@@ -1,14 +1,23 @@
 import { useState } from 'react'
-import logo from './logo.svg'
+import reactLogo from './assets/react.svg'
+
+import './styles/fonts/orion.fonts.css'
 import './App.css'
 import Home from './pages/Home'
+import Contact from './pages/Contact'
 import About from './pages/About'
+import PortfolioInGrids from './pages/PortfolioInGrids'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <Home />
-    // <About />
+    <div className="App">
+      {/* <Home /> */}
+      {/* <Contact /> */}
+      <PortfolioInGrids />
+      {/* <About /> */}
+    </div>
   )
 }
 
