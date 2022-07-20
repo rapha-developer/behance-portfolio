@@ -4,7 +4,7 @@ import Poster from "../components/Poster"
 function PortfolioInPosts() {
     const posterData = {
         title: "posts",
-        subtitle: "home ~ gallery"
+        subtitle: "home ~ posts"
     }
     const posts = [
         {
