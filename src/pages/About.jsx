@@ -33,7 +33,10 @@ function About() {
                 title={posterData.title}
                 subtitle={posterData.subtitle}
             />
-            <AboutDetails subject={subject} progressItems={progress} />
+            <AboutDetails 
+                subject={subject} 
+                progressItems={progress} 
+            />
         </div>
     )
 }
