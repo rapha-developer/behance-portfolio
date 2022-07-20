@@ -1,11 +1,47 @@
 import { useState } from 'react'
 import navbarLogo from '../../assets/logo.png'
+import NavbarItem from './NavbarItem';
 
 function Navbar(props) {
     const [dataVisible, setDataVisible] = useState(false)
     function changeVisibility() {
         setDataVisible((oldVisibility) => !oldVisibility)
     }
+    const navbarItems = [
+        {
+            path: "/",
+            label: "home"
+        },
+        {
+            path: "/posts",
+            label: "portfolio"
+        },
+        {
+            path: "/gallery",
+            label: "Gallery"
+        },
+        {
+            path: "/blogs",
+            label: "blogs"
+        },
+        {
+            path: "/about",
+            label: "about"
+        },
+        {
+            path: "/contact",
+            label: "contact"
+        },
+    ];
+    const nav__items = navbarItems.map((navItem) => {
+        return ( 
+            <NavbarItem 
+                path={navItem.path}
+                label={navItem.label}
+            />
+        );
+    });
+
     return (
         <nav className="navbar">
             <div className="container">
@@ -22,21 +58,7 @@ function Navbar(props) {
                     </div>
                     <div className="nav__content" id='nav-content' data-visible={dataVisible}>
                         <ul className="nav__list">
-                            <li className="nav__item">
-                                <a href="#" className="nav__link uppercase">portfolio</a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#" className="nav__link uppercase">Gallery</a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#" className="nav__link uppercase">blogs</a>
-                                </li>
-                            <li className="nav__item">
-                                <a href="#" className="nav__link uppercase">About</a>
-                            </li>
-                            <li className="nav__item">
-                                <a href="#" className="nav__link uppercase">Contact</a>
-                            </li>
+                            {nav__items}
                         </ul>
                     </div>
                 </div>
