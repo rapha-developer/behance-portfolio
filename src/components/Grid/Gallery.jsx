@@ -1,25 +1,6 @@
 
-function Gallery() {
-    const gallery = [
-        {
-            title: "Minimum agostinho",
-            image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_07.jpg",
-            tags: "Capital",
-            url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
-        },
-        {
-            title: "Per prima heart",
-            image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_02.jpg",
-            tags: "Capital",
-            url: "http://themes.g5plus.net/orion/creative-business/portfolio/per-prima-denique/"
-        },
-        {
-            title: "Habeas corpus",
-            image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_05.jpg",
-            tags: "Capital",
-            url: "http://themes.g5plus.net/orion/creative-business/portfolio/habeo-quodsi/"
-        },
-    ];
+function Gallery(props) {
+    const gallery = props.gallery
     const gallery__items = gallery.map((galleryItem) => {
         return (
             <div className="gallery__item" key={galleryItem.title}>
