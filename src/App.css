@@ -137,7 +137,7 @@
 |      Banner    |
 | -------------- */
 .banner {
-  padding: var(--spc__scale-12);
+  padding: var(--spc__scale-14);
   display: grid;
   grid-gap: 10px;
   justify-items: center;
@@ -163,7 +163,7 @@
 |   Progress Bar   |
 |* ------------- **/
 .progress__section {
-  padding-block: var(--spc__scale-12);
+  padding-bottom: var(--spc__scale-12);
   padding-inline: var(--spc__scale-2);
 }
 .progress__item {
@@ -179,6 +179,7 @@
   font-weight: var(--fw__regular);
   color: hsl(var(--clr__primary--500));
   letter-spacing: 0.2em;
+  margin-bottom: var(--spc__scale-3);
 }
 .progress__line {
   content: "";
@@ -223,7 +224,7 @@
 |      Subject     |
 |* ------------- **/
 .subject {
-  padding-block: var(--spc__scale-12);
+  padding-top: var(--spc__scale-12);
   padding-inline: var(--spc__scale-2);
 }
 .subject__intro {
@@ -257,7 +258,7 @@
 |      Contact     |
 |* ------------- **/
 .contact__section {
-  padding-block: var(--spc__scale-12);
+  padding-block: var(--spc__scale-14);
   padding-inline: var(--spc__scale-2);
 }
 .contact__information {
@@ -291,6 +292,7 @@
 |     Posts        |
 |* ------------- **/
 .posts {
+  padding-block: var(--spc__scale-21);
   --gap: 30px;
   display: grid;
   grid-gap: var(--gap);
@@ -508,7 +510,7 @@
 .gallery {
   --gap: 25px;
   --min__width: 360px;
-  padding-block: var(--spc__scale--4);
+  padding-block: var(--spc__scale-21);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--min__width), 1fr));
   grid-gap: var(--gap);
@@ -664,4 +666,7 @@
   .nav__item + .nav__item {
       margin-left: 0px;
   }
+}
+.about__details {
+  padding-block: var(--spc__scale-12);
 }
