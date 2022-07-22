@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import navbarLogo from '../../assets/logo.png'
+import raphaLogo from '../../assets/rapha-logo.png'
 import NavbarItem from './NavbarItem';
 
 function Navbar(props) {
@@ -49,7 +50,7 @@ function Navbar(props) {
                     <div className="nav__header" 
                         data-visible={dataVisible} >
                         <div className="nav__logo">
-                            <img src={navbarLogo} alt="Navbar logo" className="nav__image" />
+                            <img src={raphaLogo} alt="Navbar logo" className="nav__image" />
                         </div>
                         <button className="nav__hamburger" 
                                 onClick={changeVisibility}
