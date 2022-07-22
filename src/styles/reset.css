@@ -36,7 +36,10 @@ p {
     padding: 0;
     text-decoration: none;
 }
-
+ul,
+li {
+    list-style: none;
+}
 img {
     max-width: 100%;
 }
