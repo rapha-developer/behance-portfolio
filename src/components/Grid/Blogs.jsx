@@ -4,7 +4,7 @@ function Blogs(props) {
     const blogs__items = blogs.map((blogItem, key) => {
         const classInvert = ((key + 1) % 2 === 0) ? 'invert' : "";
         return (
-            <div className={`blogs__item ${classInvert}`} key={key} >
+            <div className={`blogs__item ${classInvert}`} key={blogItem.id} >
                 <div className="blogs__column blogs__image" >
                     <img src={blogItem.image} alt="Alt Text Image" />
                     <a 

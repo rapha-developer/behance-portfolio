@@ -4,7 +4,7 @@ function Posts(props) {
     const posts__items = posts.map((postItem, key) => {
         const invertClass =  ((key + 1) % 2 === 0) ?  'invert' : '' 
         return (
-            <div className={`posts__item ${invertClass}`} key={key}>
+            <div className={`posts__item ${invertClass}`} key={postItem.id}>
                 <div className="posts__column post__image">
                     <img src={postItem.image} alt="Image Alt Text" />
 

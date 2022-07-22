@@ -3,7 +3,7 @@ function Gallery(props) {
     const gallery = props.gallery
     const gallery__items = gallery.map((galleryItem) => {
         return (
-            <div className="gallery__item" key={galleryItem.title}>
+            <div className="gallery__item" key={galleryItem.id}>
                 <img src={galleryItem.image} alt={galleryItem.title} className="gallery__image" />
                 <div className="gallery__thumb">
                     <div className="gallery__content">
