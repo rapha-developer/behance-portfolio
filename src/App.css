@@ -383,7 +383,7 @@
 |     Blogs        |
 |* ------------- **/
 .blogs {
-  --gap: 100px;
+  --gap: 50px;
   display: grid;
   grid-gap: var(--gap);
 }
@@ -391,7 +391,7 @@
 .blogs__item {
   --min__hgt: 500px;
   min-height: var(--min__hgt);
-
+  border-bottom: 1px solid aliceblue;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
