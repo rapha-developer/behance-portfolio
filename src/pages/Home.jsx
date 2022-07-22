@@ -1,5 +1,6 @@
 import Banner from "../components/Banner"
 import ContactInfo from "../components/ContactInfo"
+import Footer from "../components/Footer/Footer"
 import Blogs from "../components/Grid/Blogs"
 import Gallery from "../components/Grid/Gallery"
 import Posts from "../components/Grid/Posts"
@@ -141,6 +142,7 @@ function Home() {
                 <Gallery gallery={gallery} />
                 <Posts posts={posts} />
             </div>
+            <Footer />
         </div>
     )
 }
