@@ -47,6 +47,7 @@ function Home() {
     }
     const blogs = [
         {
+            id: "12345",
             date: "nOvEMbeR 9, 2016",
             title: "Top 3 best Commerce Websites in 2016",
             author: "David Butter",
@@ -55,6 +56,7 @@ function Home() {
             url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
         },
         {
+            id: "12346",
             date: "nOvEMbeR 4, 2016",
             title: "Difference between art and design",
             author: "David Butter",
@@ -65,18 +67,21 @@ function Home() {
     ]
     const gallery = [
         {
+            id: "23456",
             title: "Minimum agostinho",
             image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_07.jpg",
             tags: "Capital",
             url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
         },
         {
+            id: "23457",
             title: "Per prima heart",
             image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_02.jpg",
             tags: "Capital",
             url: "http://themes.g5plus.net/orion/creative-business/portfolio/per-prima-denique/"
         },
         {
+            id: "23458",
             title: "Habeas corpus",
             image: "http://themes.g5plus.net/orion/creative-business/wp-content/uploads/2016/10/portfolio_business_05.jpg",
             tags: "Capital",
@@ -85,6 +90,7 @@ function Home() {
     ];
     const posts = [
         {
+            id: "34567",
             date: "nOvEMbeR 9, 2016",
             title: "Top 3 best Commerce Websites in 2016",
             author: "David Butter",
@@ -93,6 +99,7 @@ function Home() {
             url: "http://themes.g5plus.net/orion/creative-business/portfolio/minimum-deterruisset/"
         },
         {
+            id: "34568",
             date: "nOvEMbeR 9, 2016",
             title: "The 10 best Web design in November",
             author: "David Butter",
@@ -101,6 +108,7 @@ function Home() {
             url: "http://themes.g5plus.net/orion/creative-business/portfolio/per-prima-denique/"
         },
         {
+            id: "34569",
             date: "nOvEMbeR 8, 2016",
             title: "The 10 best Web design in November",
             author: "David Butter",
@@ -109,6 +117,7 @@ function Home() {
             url: "http://themes.g5plus.net/orion/creative-business/portfolio/habeo-quodsi/"
         },
         {
+            id: "34670",
             date: "nOvEMbeR 7, 2016",
             title: "The 10 best new graphic design tools",
             author: "David Butter",
