@@ -1,6 +1,31 @@
 import logo from '../../assets/rapha-logo.png'
 
+import items from '../../api/navbarItems'
+import icons from '../../api/IconItems'
+
+import FooterItem from './FooterItem'
+import IconsItem from './IconsItem'
+
 function Footer() {
+    const copyrightText = "Copyright @2022 RaphaTech Inc. This is a website clone to study"
+    const footer__icons = icons.map((iconItem) => {
+        return (
+            <IconsItem
+                key={iconItem.icon}
+                url={iconItem.url}
+                icon={iconItem.icon} 
+            />
+        );
+    });
+    const footer__items = items.map((footerItem) => {
+        return (
+            <FooterItem 
+                key={footerItem.path}
+                path={footerItem.path}
+                label={footerItem.label}
+            />
+        )
+    });
     return (
         <footer className="footer">
             <div className="container">
@@ -10,64 +35,15 @@ function Footer() {
                     </div>
                     <div className="grid__item">
                         <ul className="footer__list">
-                            <li className="footer__item">
-                                <a href="#" className="footer__link capitalize">home</a>
-                            </li>
-                            <li className="footer__item">
-                                <a href="#" className="footer__link capitalize">about us</a>
-                            </li>
-                            <li className="footer__item">
-                                <a href="#" className="footer__link capitalize">services</a>
-                            </li>
-                            <li className="footer__item">
-                                <a href="#" className="footer__link capitalize">blogs</a>
-                            </li>
-                            <li className="footer__item">
-                                <a href="#" className="footer__link capitalize">contact us</a>
-                            </li>
+                            {footer__items}
                         </ul>
                     </div>
                     <div className="grid__item">
-                        <p className="footer__copyright">Copyright @2022 RaphaTech Inc.<br />This is a website clone to study</p>
+                        <p className="footer__copyright">{copyrightText}</p>
                     </div>
                     <div className="grid__item">
                         <div className="footer__icons">
-                            <div className="icons__item">
-                                <a href="#" className="icons__link">
-                                    <div className="icons__circle">
-                                        <span className="right__shadow"></span>
-                                        <span className="left__shadow"></span>
-                                        <i className="fa-regular fa-paper-plane"></i>
-                                    </div>    
-                                </a>
-                            </div>
-                            <div className="icons__item">
-                                <a href="#" className="icons__link">
-                                    <div className="icons__circle">
-                                        <span className="right__shadow"></span>
-                                        <span className="left__shadow"></span>
-                                        <i className="fa-brands fa-github"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="icons__item">
-                                <a href="#" className="icons__link">
-                                    <div className="icons__circle">
-                                        <span className="right__shadow"></span>
-                                        <span className="left__shadow"></span>
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="icons__item">
-                                <a href="#" className="icons__link">
-                                    <div className="icons__circle">    
-                                        <span className="right__shadow"></span>
-                                        <span className="left__shadow"></span>
-                                        <i className="fa-brands fa-codepen"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            {footer__icons}
                         </div>
                     </div>
                 </div>
