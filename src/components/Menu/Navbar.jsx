@@ -1,6 +1,9 @@
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom';
+
 import navbarLogo from '../../assets/logo.png'
 import raphaLogo from '../../assets/rapha-logo.png'
+import items from '../../api/navbarItems'
 import NavbarItem from './NavbarItem';
 
 function Navbar(props) {
@@ -8,37 +11,32 @@ function Navbar(props) {
     function changeVisibility() {
         setDataVisible((oldVisibility) => !oldVisibility)
     }
-    const navbarItems = [
-        {
-            path: "/",
-            label: "home"
-        },
-        {
-            path: "/posts",
-            label: "portfolio"
-        },
-        {
-            path: "/gallery",
-            label: "Gallery"
-        },
-        {
-            path: "/blogs",
-            label: "blogs"
-        },
-        {
-            path: "/about",
-            label: "about"
-        },
-        {
-            path: "/contact",
-            label: "contact"
-        },
-    ];
+    const itemsWithVisible = items.map((navItem)  => {
+        return {...navItem, visible: false }
+    });
+    function getCurrentLocation() {
+        const location = useLocation()
+        return location.pathname
+    }
+    function setActiveItem() {
+        const pathname = getCurrentLocation()
+        const itemsWithActive  = itemsWithVisible.map((navItem) => {
+            if(navItem.path === pathname) {
+                return {...navItem, visible: true}
+            } else {
+                return {...navItem}
+            }
+        });
+        return itemsWithActive
+    }
+    const [navbarItems, setNavbarItems] = useState(setActiveItem())
+    
     const nav__items = navbarItems.map((navItem, key) => {
         return ( 
             <NavbarItem key={key}
                 path={navItem.path}
                 label={navItem.label}
+                visible={navItem.visible}
             />
         );
     });
