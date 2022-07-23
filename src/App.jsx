@@ -11,6 +11,7 @@ import PortfolioInBlogs from './pages/PortfolioInBlogs'
 import PortfolioInGallery from './pages/PortfolioInGallery'
 import PortfolioInPosts from './pages/PortfolioInPosts'
 import Navbar from './components/Menu/Navbar'
+import Footer from './components/Footer/Footer'
 
 import projects from './api/projects'
 import {ProjectModel} from './Helper/ProjectModel'
@@ -43,6 +44,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
