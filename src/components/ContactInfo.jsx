@@ -5,8 +5,12 @@ function ContactInfo(props) {
         const messageAfterFormatted = contactItem.type + ": " + contactItem.value;
         return (
             <div className="contact__item" key={contactItem.type}>
-                <a href="#" className="contact__icon"><i className={contactItem.icon}></i></a>
-                <p className="contact__text">{messageAfterFormatted}</p>
+                <a href={contactItem.url} 
+                    target="_blank"
+                    className="contact__icon"><i className={contactItem.icon}></i></a>
+                <p className="contact__text">
+                    <a href={contactItem.url}
+                        target="_blank">{messageAfterFormatted}</a></p>
             </div>
         )
     });
