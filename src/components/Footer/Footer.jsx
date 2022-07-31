@@ -7,7 +7,11 @@ import FooterItem from './FooterItem'
 import IconsItem from './IconsItem'
 
 function Footer() {
-    const copyrightText = "Copyright @2022 RaphaTech Inc. This is a website clone to study"
+    const copyrightText = "Copyright @2022 RaphaTech Inc. "
+    const copyrightExplanation = {
+        url: "https://themeforest.net/item/orion-creative-multipurpose-wordpress-theme/19163616?s_rank=2",
+        text: "This is a website clone to study"
+    }
     const footer__icons = icons.map((iconItem) => {
         return (
             <IconsItem
@@ -39,7 +43,9 @@ function Footer() {
                         </ul>
                     </div>
                     <div className="grid__item">
-                        <p className="footer__copyright">{copyrightText}</p>
+                        <p className="footer__copyright">{copyrightText} 
+                            <a href={copyrightExplanation.url}
+                                target="_blank">{copyrightExplanation.text}</a></p>
                     </div>
                     <div className="grid__item">
                         <div className="footer__icons">
