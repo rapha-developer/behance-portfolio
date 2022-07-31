@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home projects={projects_list} />} />
         <Route path="posts" element={<PortfolioInPosts projects={projects_list} />} />
         <Route path="gallery" element={<PortfolioInGallery projects={projects_list} />} />
         <Route path="blogs" element={<PortfolioInBlogs projects={projects_list} />} />
