@@ -280,7 +280,15 @@
   font-weight: var(--fw__medium);
   color: hsl(var(--clr__primary--200));
 }
-
+.contact__icon i,
+.contact__text a {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+} 
+.contact__icon i:hover,
+.contact__text a:hover {
+  color: hsl(var(--clr__accent--100));
+}
 /** -------------- |
 |   locationMap    |
 |* ------------- **/
@@ -725,6 +733,18 @@
   text-align: center;
   margin-bottom: var(--spc__scale-5);
 }
+.footer__copyright a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+.footer__copyright a:hover {
+  color: hsl(var(--clr__accent--100));
+}
+
 .footer__icons {
   display: flex;
   margin-bottom: var(--spc__scale-10);
