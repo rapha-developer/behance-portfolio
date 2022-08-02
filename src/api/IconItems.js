@@ -1,6 +1,6 @@
 export default [
     {
-        url: "#",
+        url: "mailto:contatosraphaelmoreira@gmail.com",
         icon: "fa-regular fa-paper-plane"
     },
     {
