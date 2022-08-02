@@ -5,7 +5,7 @@ export default [
     },
     {
         path: "/posts",
-        label: "portfolio"
+        label: "posts"
     },
     {
         path: "/gallery",
