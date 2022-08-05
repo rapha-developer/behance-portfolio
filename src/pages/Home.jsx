@@ -1,32 +1,60 @@
-import About from "./About"
-import Contact from "./Contact"
-import PortfolioInBlogs from "./PortfolioInBlogs"
-import PortfolioInGallery from "./PortfolioInGallery"
-import PortfolioInPosts from "./PortfolioInPosts"
+import HomeIcon from "../components/Home/HomeIcon"
+import icons from '../api/IconItems'
+import wavesSVG from '../assets/waves.svg'
+import circleSVG from '../assets/homeCircle.svg'
+
+import heroData from "../api/heroInformation"
 
 function Home(props) {
-    const projects = props.projects
+    const heroInformation = heroData
 
-    function filterGalleryItems(element, index) {
-        return element.id >= 142441951 && element.id <= 143696389
-    }
-    function filterBlogItems(element, index) {
-        return element.id >= 141023567 && element.id <= 141054389
-    }
-    function filterPostsItems(element, index) {
-        return element.id >= 140122905 && element.id <= 140205203
-    }
-    const galleryItems = projects.filter(filterGalleryItems)
-    const blogItems = projects.filter(filterBlogItems)
-    const postItems = projects.filter(filterPostsItems)
+    const iconsTips = ["behance", "github", "codepen"];
+    const iconsOnlyValid = icons.filter((iconItem) => {
+        const isIconValid = iconsTips.some((iconValid) => iconItem.icon.includes(iconValid))
+        if (isIconValid) {
+            return iconItem
+        }
+    });
+    const home__icons = iconsOnlyValid.map((iconItem, key) => {
+        return (
+            <HomeIcon 
+                key={key}
+                url={iconItem.url}
+                icon={iconItem.icon}
+            />
+        );
+    });
     return (
-        <div className="home">
-            <PortfolioInGallery projects={galleryItems} />
-            <PortfolioInBlogs projects={blogItems} />
-            <PortfolioInPosts projects={postItems} />
-            <About />
-            <Contact />
-        </div>
+        <section className="home">
+            <div className="home__thumbnail">
+                <img src={wavesSVG} alt="Waves beautiful to compose background" />
+            </div>
+            <div className="container">
+                <div className="hero__section">
+                    <div className="row">
+                        <div className="col">
+                            <h1 className="home__title">
+                                {heroInformation.user.name},<br />
+                                {heroInformation.user.employer},<br />
+                                {heroInformation.user.work}
+                            </h1>
+                            <p className="home__description">{heroInformation.description_es}</p>
+                            <div className="home__icons">
+                                {home__icons}
+                            </div>
+                        </div>
+                        <div className="col photo">
+                            <span className="photo__circle">
+                                <img src={circleSVG} alt="Circle to compose background" />
+                            </span>
+                            <img className="photo__profile"  
+                                src={heroInformation.image.gravatar_url} 
+                                alt={heroInformation.image.alt_text} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }
 export default Home
