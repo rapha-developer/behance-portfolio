@@ -12,6 +12,10 @@ export default [
         icon: "fa-brands fa-linkedin"
     },
     {
+        url: "https://behance.net/rapha-developer",
+        icon: "fa-brands fa-behance"
+    },
+    {
         url: "https://codepen.io/rapha-developer",
         icon: "fa-brands fa-codepen"
     }
