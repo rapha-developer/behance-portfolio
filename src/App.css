@@ -7,6 +7,7 @@
   --clr__primary--300: 188 7% 55%;
   --clr__primary--400: 185 7% 67%;
   --clr__primary--500: 190 7% 67%;
+  --clr__primary--600: 203 100% 13%;
 
   --clr__accent--100: 45 95% 63%;
   --clr__accent--200: 202 74% 64%;
@@ -874,8 +875,8 @@
   }
 }
 .home__title {
-  color: #002A44;
-  font-size: 44px;
+  color: hsl(var(--clr__primary--600));
+  font-size: var(--scale--h1);
   font-weight: var(--fw__light);
   margin-bottom: var(--spc__scale-6);
 }
